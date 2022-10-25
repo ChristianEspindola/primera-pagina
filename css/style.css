@@ -29,22 +29,22 @@ h2 {
     justify-content: center;
 }
 
-.nav__item {
+.nav-item {
     margin: 2rem 1.5rem 0 1.5rem;
 }
 
-.nav__list {
+.nav-list {
     list-style: none;
     display: flex;
 }
 
-.nav__link {
+.nav-link {
     color: black;
     text-transform: uppercase;
     text-decoration: none;
 }
 
-.nav__link:hover {
+.nav-link:hover {
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     color: #bb001f;
 }
