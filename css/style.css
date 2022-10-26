@@ -24,9 +24,14 @@ h2 {
     font-family: "Courier New", Courier, monospace;
 }
 
-.logo {
-    display: flex;
-    justify-content: center;
+.navbar-toggler {
+    background-color: rgb(47, 128, 248);
+    margin-left: 85%;
+}
+
+.navbar-brand {
+    padding-left: 20%;
+    text-align: center;
 }
 
 .nav-item {
@@ -121,6 +126,7 @@ h2 {
 .imgen_principal {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-top: 1%;
 }
 
