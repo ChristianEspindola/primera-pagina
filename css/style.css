@@ -118,6 +118,15 @@ h2 {
     margin: 15px 0px 15px 0px;
 }
 
+.tarjeta {
+    transition: all 1s;
+}
+
+.tarjeta:hover {
+    transform: scale(0.85) translateY(-15px);
+    transition-duration: 1.2s;
+}
+
 .card img {
     align-self: center;
 }
@@ -237,6 +246,70 @@ form {
     .efecto {
         font-size: 25px;
         margin: 2% 5%;
+    }
+}
+
+.slide-in-left {
+    -webkit-animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-in-left {
+    0% {
+        -webkit-transform: translateX(-1000px);
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-left {
+    0% {
+        -webkit-transform: translateX(-1000px);
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.focus-in-expand-fwd {
+    animation: focus-in-expand-fwd 1s cubic-bezier(0.6, -0.28, 0.735, 0.045) 1s 5 alternate-reverse;
+}
+
+@keyframes focus-in-expand-fwd {
+    0% {
+        letter-spacing: -0.5em;
+        transform: translateZ(-800px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateZ(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+.swirl-out-bck {
+    animation: swirl-out-bck 1s ease-in reverse both;
+}
+
+@keyframes swirl-out-bck {
+    0% {
+        transform: rotate(0) scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(-540deg) scale(0);
+        opacity: 0;
     }
 }
 
