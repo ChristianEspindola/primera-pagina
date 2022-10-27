@@ -183,17 +183,6 @@ iframe {
     }
 }
 
-@media screen and (max-width: 550px) {
-    .nophone {
-        display: none;
-    }
-    .grid-articulo {
-        grid-template-columns: 1fr;
-        grid-template-rows: 4 1fr;
-        grid-template-areas: "card_imagen1" "card_imagen2" "card_imagen3" "card_imagen4";
-    }
-}
-
 .element:hover {
     border: 4px inset rgba(100, 100, 100, 1);
     border-radius: 10px;
@@ -210,7 +199,45 @@ form {
     padding: 2% 2%;
     background-color: #ededed;
     margin: 2% 15% 5%;
+    border-radius: 50px;
+}
+
+.efecto,
+.efecto2 {
+    font-size: 30px;
     border-radius: 55px;
+    color: yellow;
+    text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+    animation: glow 4s linear infinite;
+}
+
+.efecto {
+    background-color: black;
+    margin: 2% 35%;
+}
+
+@keyframes glow {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .nophone {
+        display: none;
+    }
+    .grid-articulo {
+        grid-template-columns: 1fr;
+        grid-template-rows: 4 1fr;
+        grid-template-areas: "card_imagen1" "card_imagen2" "card_imagen3" "card_imagen4";
+    }
+    .efecto {
+        font-size: 25px;
+        margin: 2% 5%;
+    }
 }
 
 footer {
