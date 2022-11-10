@@ -1,0 +1,14 @@
+@media screen and (max-width: 550px) {
+    .nophone {
+        display: none;
+    }
+    .grid-articulo {
+        grid-template-columns: 1fr;
+        grid-template-rows: 4 1fr;
+        grid-template-areas: "card_imagen1" "card_imagen2" "card_imagen3" "card_imagen4";
+    }
+    .efecto {
+        font-size: 25px;
+        margin: 2% 5%;
+    }
+}

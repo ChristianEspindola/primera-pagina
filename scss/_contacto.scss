@@ -1,0 +1,22 @@
+//es una unica pagina que tiene su propia seccion debido a que tiene varias clases unicas//
+.iframe_maps {
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    iframe {
+        border-radius: 30px;
+    }
+}
+
+form {
+    text-align: center;
+    padding: 2% 2%;
+    background-color: rgb(231, 231, 231);
+    margin: 2% 15% 5%;
+    border-radius: 50px;
+    textarea {
+        max-width: 70%;
+        border-radius: 10px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,31 @@
+header {
+    background: #ffffff;
+    border-radius: 50px;
+    margin: 1%;
+    .navbar-toggler {
+        background-color: $mainColor;
+        margin-left: 75%;
+    }
+    .navbar-brand {
+        padding-left: 20%;
+        text-align: center;
+        padding-right: 5%;
+        filter: drop-shadow(0.25rem 0.25rem 0.25rem black);
+    }
+    .nav-item {
+        margin: 0.1rem 1rem 0rem 0.1rem;
+        .nav-link {
+            color: black;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+    }
+    .nav-list {
+        list-style: none;
+        display: flex;
+    }
+    .nav-link:hover {
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        color: $mainColor;
+    }
+}
