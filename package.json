@@ -9,12 +9,14 @@
         "type": "git",
         "url": "git+https://github.com/ChristianEspindola/primera-pagina.git"
     },
-    "keywords": [],
+    "keywords": [
+        "Argentina, Fiesta, Eventos, Salon, Catering, Casamiento, Bautismos"
+    ],
     "author": "",
     "license": "ISC",
     "bugs": {
         "url": "https://github.com/ChristianEspindola/primera-pagina/issues"
     },
     "homepage": "https://github.com/ChristianEspindola/primera-pagina#readme",
-    "description": ""
+    "description": "Es una pagina de un salon de eventos"
 }

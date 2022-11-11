@@ -1,8 +1,4 @@
-//aca se encuentra todo lo relacionado a las cards//
-.card_descripcion__titilo {
-    margin: 1rem 0 0.5rem;
-}
-
+//aca se encuentra todo lo relacionado a las cards.hay card no anidadas ya que se reutilizan en otra parte de una forma similar //
 .container_cards {
     display: flex;
     grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
@@ -20,6 +16,9 @@
         border-radius: 25px;
         font-size: x-large;
     }
+    .card img {
+        align-self: center;
+    }
 }
 
 .card,
@@ -30,11 +29,16 @@
     padding: 2rem;
     box-shadow: 10px 10px 30px -10px rgb(179, 179, 179);
     border-radius: 25px;
-    font-size: 25px;
-}
-
-.card {
-    flex: 0 1 700px;
+    font-size: $TamanoFuentepc;
+    .card_descripcion__titilo {
+        margin: 1rem 0 0.5rem;
+    }
+    .card_imagen {
+        max-width: 300px;
+        justify-content: center;
+        border-radius: 25px;
+        margin: 15px 0px 15px 0px;
+    }
     .grid-articulo {
         display: grid;
         justify-items: center;
@@ -55,30 +59,14 @@
     align-items: center;
 }
 
-.card_titulo {
-    text-align: center;
-}
-
-.card_imagen {
-    max-width: 300px;
-    justify-content: center;
-    border-radius: 25px;
-    margin: 15px 0px 15px 0px;
+.card {
+    flex: 0 1 700px;
 }
 
 .tarjeta {
     transition: all 1s;
-}
-
-.tarjeta:hover {
-    transform: scale(0.85) translateY(-15px);
-    transition-duration: 1.2s;
-}
-
-.card img {
-    align-self: center;
-}
-
-.card_descripcion__datos {
-    padding: 2rem;
+    &:hover {
+        transform: scale(0.85) translateY(-25px);
+        transition-duration: 1.2s;
+    }
 }
