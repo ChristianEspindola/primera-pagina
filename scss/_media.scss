@@ -1,16 +1,21 @@
 @media screen and (max-width: $mobile) {
-    .card .grid-articulo {
-        grid-template-columns: none;
-        .nophone {
-            display: none;
-        }
+  .card .grid-articulo {
+    grid-template-columns: none;
+    .nophone {
+      display: none;
     }
-    .efecto {
-        font-size: 25px;
-        margin: 2% 5%;
+  }
+  .container_cards {
+    .nophone {
+      display: none;
     }
-    .card,
-    .card__galeria {
-        font-size: $TamanoFuenteMobile;
-    }
+  }
+  .efecto {
+    font-size: 25px;
+    margin: 2% 5%;
+  }
+  .card,
+  .card__galeria {
+    font-size: $TamanoFuenteMobile;
+  }
 }

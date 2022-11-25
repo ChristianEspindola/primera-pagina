@@ -1,72 +1,79 @@
 //aca se encuentra todo lo relacionado a las cards.hay card no anidadas ya que se reutilizan en otra parte de una forma similar //
 .container_cards {
-    display: flex;
-    grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    .card__principal__galeria {
-        display: flex;
-        flex-direction: column;
-        flex: 0 1 450px;
-        margin: 2rem;
-        padding: -2rem;
-        box-shadow: 10px 10px 200px -10px rgb(179, 179, 179);
-        border-radius: 25px;
-        font-size: x-large;
-    }
-    .card img {
-        align-self: center;
-    }
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  .card__principal__galeria {
+    @include displayandflex;
+    flex: 0 1 450px;
+    margin: 2rem;
+    padding: -2rem;
+    box-shadow: 10px 10px 200px -10px rgb(179, 179, 179);
+    border-radius: 25px;
+    font-size: x-large;
+  }
+  .card img {
+    align-self: center;
+  }
 }
 
 .card,
 .card__galeria {
-    display: flex;
-    flex-direction: column;
-    margin: 2rem;
-    padding: 2rem;
-    box-shadow: 10px 10px 30px -10px rgb(179, 179, 179);
+  @include displayandflex;
+  margin: 2rem;
+  padding: 2rem;
+  box-shadow: 10px 10px 30px -10px rgb(179, 179, 179);
+  border-radius: 25px;
+  font-size: $TamanoFuentepc;
+  .card_descripcion__titilo {
+    margin: 1rem 0 0.5rem;
+  }
+  .card_imagen {
+    max-width: 300px;
+    justify-content: center;
     border-radius: 25px;
-    font-size: $TamanoFuentepc;
-    .card_descripcion__titilo {
-        margin: 1rem 0 0.5rem;
+    margin: 15px 0px 15px 0px;
+  }
+  .grid-articulo {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    .grid-imagenarticulo {
+      max-width: 225px;
+      max-height: 225px;
+      margin: 10px 0px 10px 10px;
     }
-    .card_imagen {
-        max-width: 300px;
-        justify-content: center;
-        border-radius: 25px;
-        margin: 15px 0px 15px 0px;
+    .card_titulo {
+      margin: 1rem 0 1rem;
     }
-    .grid-articulo {
-        display: grid;
-        justify-items: center;
-        grid-template-columns: 1fr 1fr;
-        .grid-imagenarticulo {
-            max-width: 225px;
-            max-height: 225px;
-            margin: 10px 0px 10px 10px;
-        }
-        .card_titulo {
-            margin: 1rem 0 1rem;
-        }
-    }
+  }
 }
 
 .card__galeria {
-    flex: 0 1 400px;
-    align-items: center;
+  flex: 0 1 400px;
+  align-items: center;
 }
 
 .card {
-    flex: 0 1 700px;
+  flex: 0 1 700px;
 }
 
 .tarjeta {
-    transition: all 1s;
-    &:hover {
-        transform: scale(0.85) translateY(-25px);
-        transition-duration: 1.2s;
-    }
+  transition: all 1s;
+  &:hover {
+    transform: scale(0.85) translateY(-25px);
+    transition-duration: 1.2s;
+  }
+}
+
+.tarjetaimg {
+  @include displayandflex;
+  transition: all 1s;
+  &:hover {
+    transform: scale(1.1) translateY(-10px);
+    transition-duration: 1.2s;
+  }
 }

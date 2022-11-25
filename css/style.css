@@ -1,3 +1,8 @@
+.efecto {
+  background-color: black;
+  margin: 2% 25%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -125,6 +130,16 @@ header .nav-link:hover {
   transition-duration: 1.2s;
 }
 
+.tarjetaimg {
+  display: flex;
+  flex-direction: column;
+  transition: all 1s;
+}
+.tarjetaimg:hover {
+  transform: scale(1.1) translateY(-10px);
+  transition-duration: 1.2s;
+}
+
 .iframe_maps {
   padding: 1%;
   display: flex;
@@ -151,18 +166,12 @@ form textarea {
   border-radius: 60px;
 }
 
-.efecto,
-.efecto2 {
+.efecto2, .efecto {
   font-size: 30px;
   border-radius: 55px;
   color: yellow;
   text-shadow: 0 0 15px yellow, 0 0 25px yellow;
   animation: glow 4s linear infinite;
-}
-
-.efecto {
-  background-color: black;
-  margin: 2% 25%;
 }
 
 @keyframes glow {
@@ -260,6 +269,9 @@ footer {
     grid-template-columns: none;
   }
   .card .grid-articulo .nophone {
+    display: none;
+  }
+  .container_cards .nophone {
     display: none;
   }
   .efecto {

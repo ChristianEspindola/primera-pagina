@@ -1,0 +1,10 @@
+@mixin displayandflex {
+  display: flex;
+  flex-direction: column;
+}
+
+.efecto {
+  @extend .efecto2;
+  background-color: black;
+  margin: 2% 25%;
+}
